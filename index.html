@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a smart and secure e-commerce website offering an efficient shopping experience.">
+    
+    <title>Smart Shop | Ahmed Nayel</title>
+
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/styling.css">
+    
+    <link rel="stylesheet" href="/css/alt-style.css">
+    <link rel="icon" href="/imgs/logo.png">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="/css/responsible-part.css">
+</head>
+<body>
+    
+    <header>
+        <section class="head-container">
+            <div class="header bg-white black-shadow">
+
+                <div class="top-section p-20 flex-between">
+                    
+                    <div class="logo"> <img src="/imgs/logo-black.png" alt="website logo"> </div>
+    
+                    <div class="form">
+                        <form action="index.html">
+                            <input type="search" class="input-search transition" placeholder="search here">
+                            <button type="submit" class="searchBtn transition">search</button>
+                        </form>
+                    </div>
+    
+                    <div class="nav-item flex-center">
+    
+                        <div class="shopping-info relative flex-center transition">
+                            <i class="fa-solid fa-basket-shopping shopping-icon"></i>
+                            <span class="count-item flex-center">0</span>
+                        </div>
+    
+                        <div class="cart-info">
+                            <p>my cart</p>
+                            <div>$<span class="font-bold totalCartPrice">0.00</span></div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="nav-links transition">                    
+                    <nav class="flex-between container-sections">
+                        <div class="links">                            
+                            <i class="fa-solid fa-bars-staggered menu-show-btn pointer display-none"></i>
+                            
+                            <ul class="flex-center transition">
+                                <span class="menu-overlay display-none pointer"></span>
+                                <i class="fa-solid fa-xmark close-menu-icon display-none pointer" title="close this list."></i>
+                                <img src="/imgs/logo-black.png" alt="logo image" class="logo-menu display-none w-100">
+                                
+                                <li> <a target="_self" href="index.html" class="active"> home page</a> </li>
+                                <li> <a target="_blank" href="html/phoneProduct.html"> phone products</a> </li>
+                                <li> <a target="_blank" href="html/allProducts.html"> all product</a> </li>
+                                <li> <a target="_blank" href="html/contactus.html"> contact us</a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="login-btn">
+                            <a href="login.html" target="_blank">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                            <a href="signin.html" target="_blank">sign in <i class="fa-solid fa-user-plus"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="cart flex-between flex-column p-20 transition overflow-y-auto">
+
+            <div class="cart-top flex-between">
+                <h3> cart info (<span class="sub-head"> <span class="nitems"> 0 </span> <span> items in your cart </span> </span> ) </h3>
+                <i class="fa-solid fa-xmark flex-center close-icon" title="close this list."></i>
+            </div>
+
+            <div class="cart-items flex-center flex-column overflow-y-auto"></div>
+
+            <div class="price-info">
+
+                <div class="info-part flex-between flex-column">
+
+                    <div class="title flex-between">
+                        <p>cart subtotal: </p>
+                        <p> $ <span class="totalProductSalary font-bold">0</span> </p>
+                    </div>
+
+                    <div class="price-btn flex-center flex-column">
+                        <button class="checkoutBtn">proceed to checkout</button>
+                        <button class="bg-normal">shop more </button>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>
+        
+        <section class="sidebar">
+            <div class="container-sections flex-between">
+
+                <div class="sidebar-secion all-content black-shadow">
+                    <div class="first-sidebar">
+                        <div class="title-1">
+                            <h3 class="capitalize"> <span> <i class="fa-solid fa-list-check"></i> </span>our store have:</h3>
+                        </div>
+    
+                        <div class="links">
+                            <a href="index.html">all categories</a>
+                            <a href="index.html">best seller products</a>
+                            <a href="index.html">new arrivals</a>
+                            <a href="index.html">top 10 offers</a>
+                            <a href="index.html">electronics and digitals</a>
+                            <a href="index.html">fashion and clothing</a>
+                            <a href="index.html">jewelry and watches</a>
+                            <a href="index.html">tv and audio</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-section">                
+                    <!-- slide-swp : this section that used for image -->
+                    <div class="mySwiper relative slide-swp">                    
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <a href="index.html"> <img src="/imgs/slider-01.jpg" alt="slider image 1"></a></div>
+                            <div class="swiper-slide"> <a href="index.html"> <img src="/imgs/slider-02.jpg" alt="slider image 2"></a></div>
+                            <div class="swiper-slide"> <a href="index.html"> <img src="/imgs/slider-03.jpg" alt="slider image 3"></a></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>                
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container-sections">
+                <div class="features p-20 grid-200">
+                    <div class="featBox bg-white black-shadow radius-8 pointer">
+                        <div class="img"> <img src="/imgs/features1.png" alt="feature image"> </div>
+                        <div class="info">
+                            <h3>free shopping</h3>
+                            <p>Free shipping encourages customers to add more items to their cart, enhancing the shopping experience.</p>
+                        </div>
+                    </div>                    
+                    <div class="featBox bg-white black-shadow radius-8 pointer">
+                        <div class="img"> <img src="/imgs/features2.png" alt="feature image"> </div>
+                        <div class="info">
+                            <h3>smart shopping</h3>
+                            <p>Smart shopping tools provide personalized recommendations that make finding products quicker and easier.</p>
+                        </div>
+                    </div>                    
+                    <div class="featBox bg-white black-shadow radius-8 pointer">
+                        <div class="img"> <img src="/imgs/features3.png" alt="feature image"> </div>
+                        <div class="info">
+                            <h3>ease shopping</h3>
+                            <p>Streamlined navigation ensures a smooth and stress-free shopping journey.</p>
+                        </div>
+                    </div>                    
+                    <div class="featBox bg-white black-shadow radius-8 pointer">
+                        <div class="img"> <img src="/imgs/features4.png" alt="feature image"> </div>
+                        <div class="info">
+                            <h3>simple shopping</h3>
+                            <p>A clean, straightforward interface reduces distractions, leading to a more enjoyable shopping experience.</p>
+                        </div>
+                    </div>                    
+                    <div class="featBox bg-white black-shadow radius-8 pointer">
+                        <div class="img"> <img src="/imgs/features5.png" alt="feature image"> </div>
+                        <div class="info">
+                            <h3>secure shopping</h3>
+                            <p>Secure payment gateways and data protection ensure a safe and reliable shopping environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-section p-20 mtb-10">
+            <div class="container-sections">
+                <div class="banners grid-300 pointer">
+                    <div class="banner relative transition overflow-hidden"> <a href="index.html"> <img class="overflow-hidden radius-8" src="/imgs/banner/banner-1.jpg" alt="banner image"> </a></div>
+                    <div class="banner relative transition overflow-hidden"> <a href="index.html"> <img class="overflow-hidden radius-8" src="/imgs/banner/banner-2.jpg" alt="banner image"> </a></div>
+                    <div class="banner relative transition overflow-hidden"> <a href="index.html"> <img class="overflow-hidden radius-8" src="/imgs/banner/banner-3.jpg" alt="banner image"> </a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section p-20 mtb-10">
+            <div class="container-sections">
+                <!-- sales-section for js swiper lib maintenance -->
+                <div class="sales-section relative p-20 overflow-hidden">
+                    
+                    <div id="product-one" class="main-title title p-20 relative">
+                        <h3 data-topicpart="product-one" class="capitalize">electronics product </h3>
+                    </div>
+
+                    <!-- swiper-wrapper as a parent component and [ swiper-slide ] to each component within the parent component -->
+                    <div class="products mtb-10 swiper-wrapper"></div>
+
+                    <div class="swiper-button-next next-one btnSwip fs-16"></div>
+                    <div class="swiper-button-prev prev-one btnSwip fs-16"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="banner-section p-20 mtb-10">
+            <div class="container-sections text-center">
+                <div class="banners grid-500 pointer">
+                    <div class="banner relative transition overflow-hidden scale-1-5"> <a href="index.html"> <img class="overflow-hidden radius-8" src="/imgs/banner/banner-4.jpg" alt="banner image"> </a></div>
+                    <div class="banner relative transition overflow-hidden scale-1-5"> <a href="index.html"> <img class="overflow-hidden radius-8" src="/imgs/banner/banner-5.jpg" alt="banner image"> </a></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="product-section p-20 mtb-10 pointer">
+            <div class="container-sections newProductSection relative">
+                <div class="sales-new-section p-20 overflow-hidden">
+                    
+                    <div id="product-two" class="main-title title p-20 relative">
+                        <h3 data-topicpart="product-two" class="capitalize">phone products</h3>
+                    </div>
+
+                    <div class="imgSlider flex-between mtb-10 overflow-hidden cursor-move">
+
+                        <div class="mainImage"> <a href="index.html"> 
+                        
+                        <img src="/imgs/banner/banner-sm-1.jpg" alt="banner image" class="ZIndex-28 w-250 radius-8"> </a> </div>
+
+                        <div class="sliderSection ZIndex-1 cursor-move">
+                            <div class="mtb-10 swiper-wrapper another-product"></div>
+                        </div>
+                        
+                        <div class="swiper-button-next next-two btnSwip fs-16"></div>
+                        <div class="swiper-button-prev prev-two btnSwip fs-16"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section p-20 mtb-10 pointer">
+            <div class="container-sections newProductSection relative">
+                <div class="sales-new-section p-20 overflow-hidden">
+                    
+                    <div id="product-three" class="main-title title p-20 relative">
+                        <h3 data-topicpart="product-three" class="capitalize">desktop and laptops</h3>
+                    </div>
+
+                    <div class="imgSlider flex-between mtb-10 overflow-hidden cursor-move">
+
+                        <div class="sliderSection ZIndex-1 cursor-move">
+                            <div class="mtb-10 swiper-wrapper another-product-2"></div>
+                        </div>
+                        
+                        <div class="swiper-button-next next-two btnSwip fs-16"></div>
+                        <div class="swiper-button-prev prev-two btnSwip fs-16"></div>
+
+                        <div class="mainImage"> <a href="index.html"> <img src="/imgs/banner/banner-sm-2.jpg" alt="banner image" class="ZIndex-28 w-250 radius-8 obj-center"> </a> </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-section p-20 mtb-10">
+            <div class="container-sections">
+                <div class="banners grid-300 pointer">
+                    <div class="banner relative transition overflow-hidden"> <a href="index.html"> <img class="overflow-hidden radius-8" src="/imgs/banner/banner-6.jpg" alt="banner image"> </a></div>
+                    <div class="banner relative transition overflow-hidden"> <a href="index.html"> <img class="overflow-hidden radius-8" src="/imgs/banner/banner-7.jpg" alt="banner image"> </a></div>
+                    <div class="banner relative transition overflow-hidden"> <a href="index.html"> <img class="overflow-hidden radius-8" src="/imgs/banner/banner-8.jpg" alt="banner image"> </a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news bg-white p-20">
+            <div class="container-sections">
+                <div class="news-content relative">
+
+                    <div class="new flex-between p-20">
+                        <div class="text-info flex-center gap-20">
+                            
+                            <div class="img-part">
+                                <img class="w-100" src="/imgs/icon_email.png" alt="email image for subscribing">
+                            </div>
+
+                            <div class="info-part">
+                                <h3>Tell us your needs: </h3>
+                                <p>30% discount when you getting from this website</p>
+                            </div>
+                        </div>
+
+                        <div class="form-part">
+                            <form action="index.html" class="border-main w-fit overflow-hidden radius-8">
+                                <input class="outline-none border-none p-20" type="email" placeholder="write your email here...">
+                                <button class="border-none p-20 bg-main capitalize pointer white-color" type="submit">subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section mt-20">
+            <div class="all-layers">
+
+                <div class="first-layer layer-1 p-20">
+                    <div class="text-center">
+                        <p class="capitalize white-color goTop pointer" onclick="goTop()">go to top</p>
+                    </div>
+                </div>
+
+                <div class="second-layer layer-2 p-20">
+                    <div class="rows flex-center gap-20">
+                        
+                        <div class="row-one p-20">
+                            
+                            <div class="row-title">
+                                <img src="/imgs/logo-white.png" alt="logo image">
+                            </div>
+                            
+                            <div class="row-content mtb-10">
+                                <div class="main-sec flex gap-10">
+                                    <i class="headset-icon fa-solid fa-headset main-color fs-60"></i>
+                                    <div class="row-text-section">
+                                        <h3 class="white-color">hotline free 100% :</h3>
+                                        <p class="main-color">(+100) 785266266</p>
+                                    </div>
+                                </div>
+                                <p class="white-color w-250N line-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row-two flex-center flex-column p-20">
+                            <div class="row-two-title">
+                                <h3 class="capitalize white-color"> shopping and delivery</h3>
+                                <div class="row-two-links flex-up flex-column gap-10">
+                                    <a href="index.html" class="block white-color capitalize">delivery info</a>
+                                    <a href="index.html" class="block white-color capitalize">discounts</a>
+                                    <a href="index.html" class="block white-color capitalize">payment and shopping</a>
+                                    <a href="index.html" class="block white-color capitalize">delivery times</a>
+                                    <a href="index.html" class="block white-color capitalize">order process</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-three flex-center flex-column p-20">
+                            <div class="row-two-title">
+                                <h3 class="capitalize white-color"> FAQs and helps</h3>
+                                <div class="row-two-links flex-up flex-column gap-10">
+                                    <a href="index.html" class="block white-color capitalize">FAQs</a>
+                                    <a href="index.html" class="block white-color capitalize">order tracking</a>
+                                    <a href="index.html" class="block white-color capitalize">contact us</a>
+                                    <a href="index.html" class="block white-color capitalize">events</a>
+                                    <a href="index.html" class="block white-color capitalize">help support</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-four flex-center flex-column p-20">
+                            <div class="row-two-title">
+                                <h3 class="capitalize white-color"> information</h3>
+                                <div class="row-two-links flex-up flex-column gap-10">
+                                    <a href="index.html" class="block white-color capitalize">payment process</a>
+                                    <a href="index.html" class="block white-color capitalize">our services</a>
+                                    <a href="index.html" class="block white-color capitalize">your account</a>
+                                    <a href="index.html" class="block white-color capitalize">our policy</a>
+                                    <a href="index.html" class="block white-color capitalize">website issues</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="third-layer layer-3 p-10">
+                    <div class="content-info flex-between gap-20">
+                        <div class="box">
+                            <p class="white-color transition capitalize">topico 2024 | all rights are received </p>
+                        </div>
+                        <div class="box">
+                            <div class="imgs-part flex-center gap-20">
+                                <div class="img-sec">
+                                    <img src="/imgs/payment-1.png" alt="payment image" class="w-60 radius-8">
+                                </div>
+                                <div class="img-sec">
+                                    <img src="/imgs/payment-2.png" alt="payment image" class="w-60 radius-8">
+                                </div>
+                                <div class="img-sec">
+                                    <img src="/imgs/payment-3.png" alt="payment image" class="w-60 radius-8">
+                                </div>
+                                <div class="img-sec">
+                                    <img src="/imgs/payment-4.png" alt="payment image" class="w-60 radius-8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper-lib.js"></script>
+    
+    <script src="js/showItems.js"></script>
+    <script src="js/main.js"></script>
+</html>
