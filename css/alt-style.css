@@ -1,0 +1,354 @@
+
+:root {
+    --main-color:#fcb700;
+    --dark-color:#444444;
+    --paragraph-color:#7777;
+
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-item:#0066c0;
+    --bg-color: #f5f6f9;
+    --footer-one:#4d5669;
+    --footer-two:#394150;
+    --footer-three:#202935;
+}
+
+.black-shadow {
+    box-shadow: 4px 4px 16px #0000001f;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.relative {
+    position: relative;
+}
+
+.transition {
+    transition: all 0.3s;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.container-sections {
+    width: 75%;
+    margin: auto;
+}
+
+@media (max-width:1500px) {
+    .container-sections {
+        width: 90%;
+    }
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.mtb-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mlr-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.radius-8 {
+    border-radius: 8px;
+}
+.radius-20 {
+    border-radius: 20px;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.grid-200 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+.pointer {
+    cursor: pointer;
+}
+.grid-300 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.grid-500 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    gap: 40px;
+}
+
+@media (max-width:767px) {
+    .grid-300 {
+        gap: 20px;
+    }
+}
+
+.normal-weight {
+    font-weight: normal;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-normal {
+    text-align: left;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.red-color {
+    color: var(--dark-red);
+}
+
+.yellow-color {
+    color: var(--main-color);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-150 {
+    width: 150px;
+}
+
+.w-300 {
+    width: 300px;
+}
+
+.line-12 {
+    line-height: 1.2;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.w-25per{
+    width: 25%;
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+    display: none;
+}
+.delete-icon {
+    margin-top: 25px;
+    font-size: 15px !important;
+}
+
+.scale-1-5 {
+    transform: scale(1.5);
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.w-250 {
+    width: 280px;
+    height: 420px;
+    object-fit: cover;
+    object-position: left center;
+}
+
+.newProductSection .imgSlider .sliderSection {
+    width: calc(100%  - 300px);
+}
+.ZIndex-28 {
+    z-index: 28;
+}
+
+.ZIndex-1 {
+    z-index: -2;
+}
+
+.obj-center {
+    object-position: right top;
+}
+
+.w-100 {
+    width: 100px;
+}
+
+.border-none {
+    border: none;
+}
+.outline-none {
+    outline: none;
+}
+
+.display-none {
+    display: none;
+}
+.border-main {
+    border: 1px solid var(--main-color);
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.white-color {
+    color: var(--bg-color);
+}
+
+.layer-1 {
+    background-color: var(--footer-one);
+}
+.layer-2 {
+    background-color: var(--footer-two);
+}
+.layer-3 {
+    background-color: var(--footer-three);
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+.flex-up {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    display: block;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-250N {
+    width: 250px;
+}
+
+.line-15 {
+    line-height: 1.5;
+}
+
+.w-60 {
+    width: 60px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.w-h-20 {
+    width: 20px;
+    height: 20px;
+}
+
+.filter-box .p-lr-10 {
+    padding: 0 10px;
+}
+
+.mtb-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.w-50per{
+    width: 50%;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.facebook-bg{
+    background: #1877f2;
+    color: white;
+}
+.linkedin-bg{
+    background: #0a66c2;
+    color: white;
+}
+.github-bg{
+    background: #333;
+    color: white;
+}
+.whatsapp-bg{
+    background: #25d366;
+    color: white;
+}
+.telegram-bg{
+    background: #0088cc;
+    color: white;
+}
+.instagram-bg{
+    background: #e1306c;
+    color: white;
+}

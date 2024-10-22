@@ -1,0 +1,187 @@
+/* index page */
+
+@media (max-width:900px) {
+    .top-section {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .form {
+        order: 3;
+        margin: 10px auto;
+    }
+    .form input,
+    .form button {
+        padding: 5px;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .nav-links .links ul{
+        padding-top: 50px;
+        position: fixed;
+        top: 0;
+        left: -400px;
+        bottom: 0;
+        width: 400px;
+        background-color: #fff;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links .links ul.show{
+        left: 0px;
+    }
+    .links ul .logo-menu {
+        display: block;
+        margin: 0 auto;
+    }
+    .links ul .close-menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
+    .nav-links .menu-show-btn  {
+        display: block;
+    }
+    
+    .nav-links .links ul.show span.menu-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #00000058;
+        height: 100%;
+        width: calc(100% - 400px);
+    }
+    .product-section .mainImage {
+        display: none;
+    }
+    .product-section .imgSlider .sliderSection {
+        width: 100%;
+    }
+    .new {
+        gap: 20px;
+        font-size: 14px;
+    }
+    .new form {
+        border: none;
+    }
+    .new form input {
+        border: 1px solid var(--main-color);
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .new form button {
+        padding: 10px ;
+        width: 90%;
+    }
+    .new .text-info h3 {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:767px) {
+    .nav-links .links ul{
+        width: 100%;
+        left: -100%;
+    }
+    .cart {
+        width: 100%;
+        right: -100%; /* to avoid show section on the right */
+    }
+    
+    .banner-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .banner-section img {
+        transform: translateX(-15px);
+    }
+    
+    .banners .banner {
+        margin: 20px 0;
+    }
+    .container-sections .title h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1000px) { 
+    .sidebar-secion{
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+}
+@media (max-width:767px) {
+    .rows,
+    .content-info,
+    .new {
+        flex-direction: column;
+        text-align: center;
+    }
+    .rows{
+        font-size: 14px;
+    }
+    .rows .row-one .headset-icon {
+        font-size: 40px;
+    }
+}
+
+/*
+ item page
+ ,main-content-intro
+ , checkout page
+*/
+@media (max-width:767px) {
+    .phone-part .phones-infos ,
+    .phones .store-imgs,
+    .main-content-intro .both-parts,
+    .checkoutCls .all-orders{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .infos,
+    .checkoutCls .all-orders {
+        font-size: 14px;
+    }
+    .main-content-intro .both-parts .part-two {
+        width: 100%;
+    }
+}
+
+/* login page */
+@media (max-width:600px) {
+    .login {
+        width: 80%;
+        margin-top: 70%;
+    }
+    .contactus .container-sections {
+        margin-top: 60%;
+    }
+}
