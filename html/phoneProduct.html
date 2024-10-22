@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a smart and secure e-commerce website offering an efficient shopping experience.">
+
+    <title>Phones Page | Ahmed Nayel</title>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/styling.css">
+    
+    <link rel="stylesheet" href="/css/alt-style.css">
+    <link rel="icon" href="/imgs/logo.png">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="/css/responsible-part.css">
+
+</head>
+<body>
+
+    <header>
+        <section class="cart flex-between flex-column p-20 transition overflow-y-auto">
+
+            <div class="cart-top flex-between">
+                <h3> cart info (<span class="sub-head"> <span class="nitems"> 0 </span> <span> items in your cart </span> </span> ) </h3>
+                <i class="fa-solid fa-xmark flex-center close-icon" title="close this list."></i>
+            </div>
+
+            <div class="cart-items flex-center flex-column overflow-y-auto"></div>
+
+            <div class="price-info">
+
+                <div class="info-part flex-between flex-column">
+
+                    <div class="title flex-between">
+                        <p>cart subtotal: </p>
+                        <p> $ <span class="totalProductSalary font-bold">0</span> </p>
+                    </div>
+
+                    <div class="price-btn flex-center flex-column">
+                        <button class="checkoutBtn">proceed to checkout</button>
+                        <button class="bg-normal">shop more </button>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>
+        <section class="head-container">
+            <div class="header bg-white black-shadow">
+
+                <div class="top-section p-20 flex-between">
+                    
+                    <div class="logo"> <img src="/imgs/logo-black.png" alt="website logo"> </div>
+    
+                    <div class="form">
+                        <form action="phoneProduct.html">
+                            <input type="search" class="input-search transition" placeholder="search here">
+                            <button type="submit" class="searchBtn transition">search</button>
+                        </form>
+                    </div>
+    
+                    <div class="nav-item flex-center">
+    
+                        <div class="shopping-info relative flex-center transition">
+                            <i class="fa-solid fa-basket-shopping shopping-icon"></i>
+                            <span class="count-item flex-center">0</span>
+                        </div>
+    
+                        <div class="cart-info">
+                            <p>my cart</p>
+                            <div>$<span class="font-bold totalCartPrice">0.00</span></div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="nav-links transition">                    
+                    <nav class="flex-between container-sections">
+                        <div class="links">                            
+                            <i class="fa-solid fa-bars-staggered menu-show-btn pointer display-none"></i>
+                            
+                            <ul class="flex-center transition">
+                                <span class="menu-overlay display-none pointer"></span>
+                                <i class="fa-solid fa-xmark close-menu-icon display-none pointer" title="close this list."></i>
+                                <img src="/imgs/logo-black.png" alt="logo image" class="logo-menu display-none w-100">
+                                
+                                <li> <a  target="_blank" href="/index.html"> home page</a> </li>
+                                <li> <a  target="_self" href="phoneProduct.html"class="active"> phone products</a> </li>
+                                <li> <a  target="_blank" href="allProducts.html"> all products</a> </li>
+                                <li> <a  target="_blank" href="contactus.html"> contact us</a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="login-btn">
+                            <a href="login.html" target="_blank">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                            <a href="signin.html" target="_blank">sign in <i class="fa-solid fa-user-plus"></i></a>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="phone-part">
+            <div class="container-sections bg-white">
+                <div class="phones-infos flex-between gap-20 p-20">
+                    <div class="phones flex-center flex-column gap-10">
+
+                        <div class="main-phone transition">
+                            <img class="pointer" src="/imgs/product/product-1.jpg" alt="main phone">
+                        </div>
+
+                        <div class="store-imgs flex-center gap-10">
+
+                            <div class="images-sm">
+                                <img class="w-150 pointer" src="/imgs/product/product-1.jpg" alt="phone product">
+                            </div>
+                            <div class="images-sm">
+                                <img class="w-150 pointer" src="/imgs/product/product1.jpg" alt="phone product">
+                            </div>
+                            <div class="images-sm">
+                                <img class="w-150 pointer" src="/imgs/product/product-2.jpg" alt="phone product">
+                            </div>
+                            <div class="images-sm">
+                                <img class="w-150 pointer" src="/imgs/product/product2.jpg" alt="phone product">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="infos">
+
+                        <div class="phone-topic">
+                            <h3>Original Mobile Android Dual SIM Smart Phone G3</h3>
+                        </div>
+
+                        <div class="stars mtb-10">
+                            <i class="fa-solid fa-star yellow-color"></i>
+                            <i class="fa-solid fa-star yellow-color"></i>
+                            <i class="fa-solid fa-star yellow-color"></i>
+                            <i class="fa-solid fa-star yellow-color"></i>
+                            <i class="fa-solid fa-star yellow-color"></i>
+                        </div>
+
+                        <div class="phone-price mtb-10">
+                            <span class="font-bold main-color">$120.00</span>
+                            <span class="line-through">$170.00</span>
+                        </div>
+
+                        <div class="store-available mtb-10">
+                            <h5 class="capitalize"> availability : <span class="font-bold main-color"> exist in store </span> </h5>
+                        </div>
+
+                        <div class="phone-name mtb-10">
+                            <h3>SKU: <span class="main-color">Samsung C49389: £875, Debenhams Plus</span></h3>
+                        </div>
+
+                        <div class="more-details mtb-10">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius suscipit explicabo dolorem saepe corporis quam ea, neque veritatis corrupti atque odit vel velit sunt recusandae iure repellendus. Itaque vitae deleniti totam sapiente iusto possimus quia debitis, architecto sequi obcaecati nisi ipsum dolore quae, distinctio quaerat quos? Repellendus architecto minus recusandae!</p>
+                        </div>
+
+                        <div class="product-hint mtb-10">
+                            <h3>Hurry Up! Only 98 products left in store.</h3>
+                        </div>
+
+                        <div class="addBtn mtb-10 pointer">
+                            <button class="capitalize transition border-none pointer radius-8">add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+
+                        <div class="phone-icons">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span><i class="fa-solid fa-sliders"></i></span>
+                            <span><i class="fa-solid fa-print"></i></span>
+                            <span> <i class="fa-solid fa-share-nodes"></i></span>
+                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cart flex-between flex-column p-20 transition overflow-y-auto">
+
+            <div class="cart-top flex-between">
+                <h3> cart info (<span class="sub-head"> <span class="nitems"> 0 </span> <span> items in your cart </span> </span> ) </h3>
+                <i class="fa-solid fa-xmark flex-center close-icon" title="close this list."></i>
+            </div>
+
+            <div class="cart-items flex-center flex-column overflow-y-auto"></div>
+
+            <div class="price-info">
+
+                <div class="info-part flex-between flex-column">
+
+                    <div class="title flex-between">
+                        <p>cart subtotal: </p>
+                        <p> $ <span class="totalProductSalary font-bold">0</span> </p>
+                    </div>
+
+                    <div class="price-btn flex-center flex-column">
+                        <button class="checkoutBtn">proceed to checkout</button>
+                        <button class="bg-normal">shop more </button>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="product-section p-20 mtb-10">
+            <div class="container-sections">
+                <!-- sales-section for js swiper lib maintenance -->
+                <div class="sales-section relative p-20 overflow-hidden">
+
+                    <div id="product-one" class="main-title title p-20 relative">
+                        <h3 data-topicpart="product-one" class="capitalize">electronics product </h3>
+                    </div>
+
+                    <!-- swiper-wrapper as a parent component and [ swiper-slide ] to each component within the parent component -->
+                    <div class="products mtb-10 swiper-wrapper"></div>
+
+                    <div class="swiper-button-next next-one btnSwip fs-16"></div>
+                    <div class="swiper-button-prev prev-one btnSwip fs-16"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-section mt-20">
+            <div class="all-layers">
+
+                <div class="first-layer layer-1 p-20">
+                    <div class="text-center">
+                        <p class="capitalize white-color goTop pointer" onclick="goTop()">go to top</p>
+                    </div>
+                </div>
+
+                <div class="second-layer layer-2 p-20">
+                    <div class="rows flex-center gap-20">
+                        
+                        <div class="row-one p-20">
+                            
+                            <div class="row-title">
+                                <img src="/imgs/logo-white.png" alt="logo image">
+                            </div>
+                            
+                            <div class="row-content mtb-10">
+                                <div class="main-sec flex gap-10">
+                                    <i class="headset-icon fa-solid fa-headset main-color fs-60"></i>
+                                    <div class="row-text-section">
+                                        <h3 class="white-color">hotline free 100% :</h3>
+                                        <p class="main-color">(+100) 785266266</p>
+                                    </div>
+                                </div>
+                                <p class="white-color w-250N line-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="row-two flex-center flex-column p-20">
+                            <div class="row-two-title">
+                                <h3 class="capitalize white-color"> shopping and delivery</h3>
+                                <div class="row-two-links flex-up flex-column gap-10">
+                                    <a href="index.html" class="block white-color capitalize">delivery info</a>
+                                    <a href="index.html" class="block white-color capitalize">discounts</a>
+                                    <a href="index.html" class="block white-color capitalize">payment and shopping</a>
+                                    <a href="index.html" class="block white-color capitalize">delivery times</a>
+                                    <a href="index.html" class="block white-color capitalize">order process</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-three flex-center flex-column p-20">
+                            <div class="row-two-title">
+                                <h3 class="capitalize white-color"> FAQs and helps</h3>
+                                <div class="row-two-links flex-up flex-column gap-10">
+                                    <a href="index.html" class="block white-color capitalize">FAQs</a>
+                                    <a href="index.html" class="block white-color capitalize">order tracking</a>
+                                    <a href="index.html" class="block white-color capitalize">contact us</a>
+                                    <a href="index.html" class="block white-color capitalize">events</a>
+                                    <a href="index.html" class="block white-color capitalize">help support</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-four flex-center flex-column p-20">
+                            <div class="row-two-title">
+                                <h3 class="capitalize white-color"> information</h3>
+                                <div class="row-two-links flex-up flex-column gap-10">
+                                    <a href="index.html" class="block white-color capitalize">payment process</a>
+                                    <a href="index.html" class="block white-color capitalize">our services</a>
+                                    <a href="index.html" class="block white-color capitalize">your account</a>
+                                    <a href="index.html" class="block white-color capitalize">our policy</a>
+                                    <a href="index.html" class="block white-color capitalize">website issues</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="third-layer layer-3 p-10">
+                    <div class="content-info flex-between gap-20">
+                        <div class="box">
+                            <p class="white-color transition capitalize">topico 2024 | all rights are received </p>
+                        </div>
+                        <div class="box">
+                            <div class="imgs-part flex-center gap-20">
+                                <div class="img-sec">
+                                    <img src="/imgs/payment-1.png" alt="payment image" class="w-60 radius-8">
+                                </div>
+                                <div class="img-sec">
+                                    <img src="/imgs/payment-2.png" alt="payment image" class="w-60 radius-8">
+                                </div>
+                                <div class="img-sec">
+                                    <img src="/imgs/payment-3.png" alt="payment image" class="w-60 radius-8">
+                                </div>
+                                <div class="img-sec">
+                                    <img src="/imgs/payment-4.png" alt="payment image" class="w-60 radius-8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper-lib.js"></script>
+
+    <script src="/js/showItems.js"></script>
+    <script src="/js/main.js"></script>
+</html>
